@@ -1,6 +1,5 @@
 # SU-Work-Manager
-
-https://github.com/stutijindal11/SU-Work-Manager/issues/new
+![4](https://user-images.githubusercontent.com/23147474/30309137-96b0bda0-9757-11e7-8fc2-d8f9ad25863a.JPG)
 
 JavaFX - EclipseIDE
 
