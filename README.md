@@ -19,6 +19,13 @@ Our application will be used during the daily employment process.
 * Helping the management offices to keep track of each employee and their activities.
 * Making office-work paperless.
 
+### Screenshots
+![webp net-gifmaker](https://user-images.githubusercontent.com/23147474/30350650-a610f4fc-97e5-11e7-924f-52c380eb6445.gif)
+
+### Wireframing
+
+![ap_uidesign-1](https://user-images.githubusercontent.com/23147474/30347574-92f9a8ec-97da-11e7-8029-e7a431d622c8.jpg)
+
 ### Features
 Work manager introduces vibrant features:
 *Barcode Scanner to login at workplaces.
@@ -27,6 +34,22 @@ Work manager introduces vibrant features:
 * A communication platform to render and pick other employee shifts.
 * Google Map functionality to get directions to office.
 * Firebase to host employee data on cloud with data security.
+
+### Google Firebase CLoud
+Firebase stores and sync’s data with `NoSQL` cloud database. The Data is synced
+across all clients in realtime, and remains available when the app goes offline.
+The Firebase Realtime Database is a cloud-hosted database. Data is stored as
+JSON and synchronized in realtime to every connected client.
+
+It adds `data security` to all node levels by allowing only authenticated users to use and
+read the data.
+The managers can send `push notifications` to the employees using Firebase.
+
+![capture](https://user-images.githubusercontent.com/23147474/30348696-4d5deae2-97de-11e7-8763-9790d7394642.JPG)
+
+![capture1](https://user-images.githubusercontent.com/23147474/30348729-62faf7e6-97de-11e7-9adf-ac5e696c7d20.JPG)
+
+
  
 ### Android Functionalities
 * Navigation Drawer
@@ -43,22 +66,4 @@ Work manager introduces vibrant features:
 * Google Maps
 * Animation
 * Multi-window feature
-
-### Google Firebase CLoud
-Firebase stores and sync’s data with `NoSQL` cloud database. The Data is synced
-across all clients in realtime, and remains available when the app goes offline.
-The Firebase Realtime Database is a cloud-hosted database. Data is stored as
-JSON and synchronized in realtime to every connected client.
-
-It adds `data security` to all node levels by allowing only authenticated users to use and
-read the data.
-The managers can send `push notifications` to the employees using Firebase.
-
-![capture](https://user-images.githubusercontent.com/23147474/30348696-4d5deae2-97de-11e7-8763-9790d7394642.JPG)
-
-![capture1](https://user-images.githubusercontent.com/23147474/30348729-62faf7e6-97de-11e7-9adf-ac5e696c7d20.JPG)
-
-### Wireframing
-
-![ap_uidesign-1](https://user-images.githubusercontent.com/23147474/30347574-92f9a8ec-97da-11e7-8029-e7a431d622c8.jpg)
 
