@@ -1,6 +1,8 @@
 # SU-Work-Manager
 
-JavaFX - EclipseIDE
+Android
+
+Google Play Store: https://play.google.com/store/apps/details?id=com.version.stutijindal.approject&hl=en
 
 ===========
 
@@ -31,5 +33,4 @@ Work manager introduces vibrant features:
 
 •	Google Map functionality to get directions to office.
 
-The android app is available on Google Play Store at
-https://play.google.com/store/apps/details?id=com.version.stutijindal.approject&hl=en
+
