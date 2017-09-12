@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinate_layout"
+    android:layout_height="match_parent"
+    android:background="#0D1D37"
+    tools:context="com.version.stutijindal.approject.developerinfo">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="203dp"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/ott"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Developer Info "
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="casual"
+            android:text="Stuti Jindal\n\nSUID: 216721053\n\n"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/mCheckbox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="User App State"-->
+        <!--android:textColor="#FFFFFF"/>-->
+
+    </LinearLayout>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/floatingActionButton66"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:clickable="true"-->
+        <!--app:fabSize="mini"-->
+        <!--android:src="@drawable/ic_done"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--app:srcCompat="@color/colorAccent" />-->
+
+</android.support.design.widget.CoordinatorLayout>

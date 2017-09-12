@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_recycler"
+    android:background="#0D1D37">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+            android:background="#0D1D37">
+
+            <Button
+                android:text="Clock Out"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/clockOut"
+                android:textColor="@color/tw__composer_white"
+                android:backgroundTint="#D44500"
+                android:textSize="20dp"/>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/timerValue"
+            android:text="00:00:00"
+            android:padding="20dp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#0D1D37">
+
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:background="#0D1D37" />
+    </ScrollView>
+
+</LinearLayout>
+</RelativeLayout>

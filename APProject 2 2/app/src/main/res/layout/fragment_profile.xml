@@ -1,0 +1,191 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_profile"
+    tools:context="com.version.stutijindal.approject.NotificationsFragment"
+    android:background="#FFFF"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#0D1D37"
+                android:text="Delete Account"
+                android:textColor="#FFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/imagePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                <!--<Button-->
+                <!--android:id="@+id/camera"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/profilecamera"-->
+                <!--android:layout_alignEnd="@+id/image"/>-->
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/camera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/image"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/profilecamera"
+                    android:tint="@color/tw__composer_white"
+                    app:backgroundTint="@android:color/black"
+                    app:elevation="10dp"
+                    app:fabSize="mini" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Name"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/tw__transparent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="end"
+                    android:lines="1"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:minEms="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorLink="?attr/actionMenuTextColor"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSelectHandle="@drawable/cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="4.5"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Email"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/tw__transparent"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="end"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textColorLink="?attr/actionMenuTextColor"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSelectHandle="@drawable/cursor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#D44500"
+                android:text="Save"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#0D1D37"
+                android:text="Logout"
+                android:textColor="@color/tw__composer_white" />
+
+        </LinearLayout>
+</ScrollView></RelativeLayout>
+
+</FrameLayout>

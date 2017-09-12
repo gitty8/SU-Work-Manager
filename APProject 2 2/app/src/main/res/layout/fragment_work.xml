@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    tools:context="com.version.stutijindal.approject.MainActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/result_textview"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/qcode"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:freezesText="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/no_barcode_captured"
+        android:textColor="#0D1D37"
+        android:textSize="22sp">/</TextView>
+
+    <Button
+        android:id="@+id/scan_barcode_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_textview"
+        android:layout_centerHorizontal="true"
+        android:background="#D44500"
+        android:drawableLeft="@drawable/barcode"
+        android:drawableTint="@color/tw__composer_white"
+        android:gravity="center_vertical"
+        android:text="@string/scan_barcode_button"
+        android:textAlignment="center"
+        android:textColor="@color/authui_inputTextColor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/start_map_activity"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_barcode_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#D44500"
+        android:drawableLeft="@android:drawable/ic_menu_mapmode"
+        android:drawableTint="@color/tw__composer_white"
+        android:text="Directions"
+        android:textColor="@color/authui_inputTextColor"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ngroupfp"
+    tools:context="com.version.stutijindal.approject.nGroupFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/com_facebook_close"
+            app:backgroundTint="@android:color/transparent"
+            app:elevation="24dp"
+            app:rippleColor="@android:color/holo_orange_light"
+            app:fabSize="mini" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \tDate :"
+                android:textSize="20sp"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:fontFamily="sans-serif-condensed" />
+
+
+            <DatePicker
+                android:id="@+id/datePicker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:datePickerMode="spinner"
+                android:headerBackground="@color/com_facebook_blue"
+                android:paddingLeft="5dp"
+                android:theme="@android:style/Theme.Holo.Light" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \tTime In :"
+                android:textSize="20sp"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:fontFamily="sans-serif-condensed" />
+
+
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:timePickerMode="spinner"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.05"
+                    android:theme="@android:style/Theme.Holo.Light" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \tTime Out :"
+                android:textSize="20sp"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:fontFamily="sans-serif-condensed" />
+
+                <TimePicker
+                    android:id="@+id/timePicker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:timePickerMode="spinner"
+                    android:layout_gravity="center"
+                    android:theme="@android:style/Theme.Holo.Light"/>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \tMessage :"
+                android:textSize="20sp"
+                android:background="@color/wallet_bright_foreground_holo_dark"
+                android:fontFamily="sans-serif-condensed" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="?attr/colorControlHighlight"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint=" Enter a description"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#0D1D37"
+                android:textColorLink="#0D1D37"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSelectHandle="@drawable/cursor"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="I acknowledge that I have read and agree to the terms and conditions of the food service policies for the online subbing of a shift."/>
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/switch1"
+                    android:textColorLink="@color/com_facebook_blue"
+                    android:theme="@style/SCBSwitch"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@color/wallet_bright_foreground_disabled_holo_light"
+                android:textColor="@color/tw__composer_white"
+                android:layout_gravity="center"
+                android:enabled="false"
+                />
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
