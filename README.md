@@ -35,5 +35,7 @@ Work manager introduces vibrant features:
 •	A communication platform to render and pick other employee shifts.
 
 •	Google Map functionality to get directions to office.
-
+ 
+•	Firebase to host employee data on cloud with data security.
+ 
 
