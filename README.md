@@ -28,7 +28,7 @@ Our application will be used during the daily employment process.
 
 ### Features
 Work manager introduces vibrant features:
-*Barcode Scanner to login at workplaces.
+* Barcode Scanner to login at workplaces.
 * Employee schedules on clocking in for work.
 * Notifications from manager and employer office for direct communication.
 * A communication platform to render and pick other employee shifts.
